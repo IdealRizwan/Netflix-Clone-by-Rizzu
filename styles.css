@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+header{
+  position: relative;
+  width: 
+  80%;
+}
+
+/* NAVBAR */
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 32px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+  height: 60px;
+  width: 250px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+select {
+  background: #111;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  height: 35px;
+    cursor: pointer;
+}
+select option {
+  background: #111;
+  color: #fff;
+  padding: 6px 12px;
+
+}
+
+.signin {
+  background: #e50914;
+  color: #fff;
+  font-family: "martel sans", sans-serif;
+  font-weight: bolder;
+  border: none;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  height: 36px;
+  width: 80px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("/Assets/images/backgroung\ img.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h3 {
+  margin: 15px 0;
+}
+
+.email-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.email-box input {
+  padding: 15px;
+  width: 300px;
+  background: #111;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.email-box button {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.bi-skip-end {  
+  font-size: 25px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+
+}
+.gbtn:hover {
+  background: red;
+  color: white;
+  opacity: 0.9;
+  transition: 0.4s ease-out;
+}
+
+/* CURVE */
+.curve {
+  height: 80px;
+  background:
+    radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  border-top: 3px solid rgb(236, 75, 75);
+  border-top-left-radius: 100% 80px;
+  border-top-right-radius: 100% 80px;
+  position: relative;
+  top: -40px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+/* TRENDING  NOW*/
+.slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  height: 270px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  min-width: 170px;
+  height: 230px;
+  background: #333;
+  position: relative;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card span {
+  position: absolute;
+  bottom: 5px;
+  left: -20px;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  color: black;
+  -webkit-text-stroke: 6px white;
+  paint-order: stroke fill;
+}
+
+/* REASONS */
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.reason-card {
+  background: linear-gradient(135deg, #1c1c3c, #120d23);
+  padding: 25px;
+  border-radius: 10px;
+  height: 250px;
+  line-height: 35px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* FAQ */
+.faq-item {
+  background: #333;
+  padding: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 60px;
+  color: #999;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.country {
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+/* NAvbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-right {
+    width: auto;
+    gap: 10px;
+  }
+
+  .navbar img {
+    height: 28px;
+  }
+
+  select {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .signin {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+}
+/* Hero section */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 120px 20px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .email-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-box input {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .email-box button {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* section padding mobile */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* trending */
+@media (max-width: 768px) {
+  .slider {
+    gap: 15px;
+    height: auto;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 140px;
+    height: 200px;
+  }
+
+  .card span {
+    font-size: 70px;
+    left: -15px;
+  }
+}
+
+/* Resons Card */
+@media (max-width: 1024px) {
+  .reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .reason-card {
+    height: auto;
+  }
+}
+
+/* FAQ+footer */
+@media (max-width: 768px) {
+  .faq-item {
+    font-size: 0.95rem;
+    padding: 18px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.icon{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    font-size: 50px;
+    color: red;
+    border-radius: 50%;
+    padding: 15px;
+    background: rgba(207, 63, 147, 0.8);
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out;
+  z-index: 0.1;
+}
+
+.signin:hover {
+  background: red;
+  color: white;
+  opacity: 0.9;
+  transition: 0.3s ease-out;
+}
+.faq-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-out;
+  opacity: 0.9;
+}
+.reason-card:hover {
+  background: linear-gradient(135deg, #1c1c3c, #120d23);
+  transform: translateY(-5px);
+  transition: transform 0.4s ease-out;
+  border-radius: 10px;
+   height: 250px;
+   line-height: 35px;
+  opacity: 0.8;
+}
