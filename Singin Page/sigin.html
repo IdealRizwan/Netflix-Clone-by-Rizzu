@@ -98,32 +98,5 @@
 
       <p class="country">Netflix India</p>
     </footer>
-
-    <!-- <script>
-      // Toggle password visibility
-      const toggleBtn = document.querySelector('.toggle-pw');
-      const passwordInput = document.querySelector('#password');
-      toggleBtn.addEventListener('click', () => {
-        const isText = passwordInput.type === 'text';
-        passwordInput.type = isText ? 'password' : 'text';
-        toggleBtn.textContent = isText ? 'SHOW' : 'HIDE';
-      });
-
-      // Floating label auto-fill fix
-      document.querySelectorAll('.input-group input').forEach(input => {
-        input.addEventListener('change', () => {
-          if (input.value) input.classList.add('has-value');
-          else input.classList.remove('has-value');
-        });
-      });
-
-      // Form submit ripple
-      document.getElementById('signin-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = e.target.querySelector('.btn-signin');
-        btn.classList.add('loading');
-        setTimeout(() => btn.classList.remove('loading'), 2000);
-      });
-    </script> -->
   </body>
 </html>
