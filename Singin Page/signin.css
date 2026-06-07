@@ -29,7 +29,7 @@ body {
 .bg {
   position: relative;
   flex: 1;
-  background-image: url("../Assets/images/Singin Page\ Backgrof.png");
+  background-image: url("../Assets/images/Signin\ Page\ Backgrof.png");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
