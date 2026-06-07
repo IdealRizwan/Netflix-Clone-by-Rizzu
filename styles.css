@@ -73,7 +73,7 @@ select option {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("./Assets/images/backgroung img.jpg") center/cover no-repeat;
+  background-image: url("./Assets/images/backgroung%20img.jpg");
   position: relative;
   display: flex;
   justify-content: center;
